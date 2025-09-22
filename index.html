@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caitlin Ngo — Portfolio</title>
+  <!-- Tailwind via Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Portfolio of Caitlin Ngo — CS + AI + HCI projects, resume, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",sans-serif}
+    .card{box-shadow:0 10px 30px rgba(0,0,0,.08)}
+  </style>
+</head>
+<body class="bg-neutral-50 text-neutral-900">
+  <!-- Header / Nav -->
+  <header class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-neutral-200">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#home" class="font-extrabold text-lg">Caitlin Ngo</a>
+      <ul class="hidden md:flex items-center gap-6 text-sm">
+        <li><a class="hover:underline" href="#projects">Projects</a></li>
+        <li><a class="hover:underline" href="#resume">Resume</a></li>
+        <li><a class="hover:underline" href="#about">About</a></li>
+        <li><a class="hover:underline" href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="inline-flex items-center px-3 py-1.5 rounded-2xl border border-neutral-300 text-sm hover:bg-neutral-100">Get in touch</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h1 class="text-3xl md:text-5xl font-extrabold leading-tight">CS + AI + HCI — building usable intelligent systems</h1>
+        <p class="mt-4 text-neutral-600">Recent VCU CS grad (AI minor). I design, prototype, and ship interactive systems—from AI‑driven smart‑glove robotics to thoughtful productivity tools. I care about clarity, accessibility, and measurable impact.</p>
+        <div class="mt-6 flex gap-3">
+          <a href="#projects" class="px-4 py-2 rounded-xl bg-black text-white hover:opacity-90">View projects</a>
+          <a href="#resume" class="px-4 py-2 rounded-xl border border-neutral-300 hover:bg-neutral-100">Resume</a>
+        </div>
+        <div class="mt-6 text-sm text-neutral-500">Keywords: React/Next, Python, SQL, Unity/VR, ML, Robotics, UX Research</div>
+      </div>
+      <div class="card rounded-3xl bg-white p-6">
+        <h2 class="font-bold">Quick Highlights</h2>
+        <ul class="mt-3 space-y-2 text-sm text-neutral-700 list-disc list-inside">
+          <li>Capstone: Safe Human‑Robot Collaboration via Smart Glove (Rokoko → ABB GoFa CRB 15000)</li>
+          <li>Full‑stack task trackers (React, Flask, SQL, Docker) with clean UI & data integrity</li>
+          <li>Unity VR interaction prototypes (VRIF); ML classifiers (MNIST/vehicle)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-white border-t border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="flex items-end justify-between mb-8">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-extrabold">Selected Projects</h2>
+          <p class="text-neutral-600">Each card links to a repo, demo, or case study.</p>
+        </div>
+        <div class="text-sm text-neutral-600">Filter:
+          <button data-filter="all" class="ml-2 px-3 py-1 rounded-full border">All</button>
+          <button data-filter="hci" class="ml-1 px-3 py-1 rounded-full border">HCI</button>
+          <button data-filter="ai" class="ml-1 px-3 py-1 rounded-full border">AI/ML</button>
+          <button data-filter="fullstack" class="ml-1 px-3 py-1 rounded-full border">Full‑Stack</button>
+        </div>
+      </div>
+      <div id="project-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    </div>
+  </section>
+
+  <!-- Resume -->
+  <section id="resume" class="bg-neutral-50 border-t border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Resume</h2>
+      <p class="mt-2 text-neutral-600">One‑page PDF focused on CS/AI/HCI. Keep it current; link from your job applications.</p>
+      <div class="mt-4 flex gap-3">
+        <a id="resume-link" href="#" class="px-4 py-2 rounded-xl bg-black text-white hover:opacity-90">Download Resume (PDF)</a>
+        <a id="linkedin-link" href="#" class="px-4 py-2 rounded-xl border border-neutral-300 hover:bg-neutral-100">LinkedIn</a>
+        <a id="github-link" href="#" class="px-4 py-2 rounded-xl border border-neutral-300 hover:bg-neutral-100">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-white border-t border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="text-2xl md:text-3xl font-extrabold">About</h2>
+        <p class="mt-3 text-neutral-700">I’m a builder who loves bridging human needs with technical systems. My work spans AI/ML, robotics, and interaction design. Recently, I’ve been integrating real‑time glove data into a collaborative robot and prototyping VR interactions for intuitive, learnable experiences.</p>
+        <p class="mt-3 text-neutral-700">I value usability, clean architecture, and evidence—usability tests, confusion matrices, latency budgets, and clear documentation.</p>
+      </div>
+      <div class="card rounded-3xl bg-neutral-50 p-6">
+        <h3 class="font-bold">Focus areas</h3>
+        <ul class="mt-3 space-y-2 text-sm text-neutral-700 list-disc list-inside">
+          <li>HCI: interaction patterns, accessibility, UX research & reporting</li>
+          <li>AI/ML: data prep, evaluation, model‑in‑the‑loop experiences</li>
+          <li>Systems: React/Next, Flask, SQL, Docker, Unity/VR</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-neutral-50 border-t border-neutral-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h2 class="text-2xl md:text-3xl font-extrabold">Contact</h2>
+      <p class="mt-2 text-neutral-600">Open to software, data, and HCI roles—and HCI/CS grad programs.</p>
+      <form class="mt-6 grid md:grid-cols-2 gap-4 max-w-2xl" onsubmit="event.preventDefault(); alert('Thanks! Replace with a form service like Formspree or Netlify Forms.');">
+        <input required class="border border-neutral-300 rounded-xl p-3" placeholder="Your name" />
+        <input required type="email" class="border border-neutral-300 rounded-xl p-3" placeholder="Email" />
+        <textarea required class="md:col-span-2 border border-neutral-300 rounded-xl p-3" rows="5" placeholder="Message"></textarea>
+        <button class="md:col-span-2 px-4 py-2 rounded-xl bg-black text-white hover:opacity-90">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-sm text-neutral-500">© <span id="year"></span> Caitlin Ngo • Built with Tailwind • Hosted on GitHub Pages</footer>
+
+  <script>
+    // Replace these with your links
+    document.getElementById('resume-link').href = 'resume.pdf';
+    document.getElementById('linkedin-link').href = 'https://www.linkedin.com/';
+    document.getElementById('github-link').href = 'https://github.com/';
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Your projects — edit this array
+    const projects = [
+      {
+        title: 'Safe Human‑Robot Collaboration via Smart Glove',
+        tags: ['hci','ai'],
+        blurb: 'Rokoko glove → ABB GoFa CRB 15000 via UDP + RAPID; gesture ML for collaborative pick‑and‑place with safety bounds.',
+        stack: ['Python','RAPID','Unity','UDP','Random Forest'],
+        link: '#',
+        img: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop' 
+      },
+      {
+        title: 'Personalized Productivity Mobile App',
+        tags: ['hci','fullstack'],
+        blurb: 'React Native to‑do and planner; Figma → implementation; global theme state; clean interaction patterns.',
+        stack: ['React Native','Expo','Figma'],
+        link: '#',
+        img: 'https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=1200&auto=format&fit=crop'
+      },
+      {
+        title: 'Task Tracker (React + MongoDB)',
+        tags: ['fullstack'],
+        blurb: 'CRUD tasks with due dates, filters, and status; restored urgency levels; clean data model.',
+        stack: ['React','MongoDB','Node'],
+        link: '#',
+        img: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop'
+      },
+      {
+        title: 'Productivity Management System (Flask + SQL + Docker)',
+        tags: ['fullstack'],
+        blurb: 'REST API + SQL schema; Dockerized dev; CI/CD; normalized DB and integrity constraints.',
+        stack: ['Flask','MySQL','Docker'],
+        link: '#',
+        img: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop'
+      },
+      {
+        title: 'Candle VR Interaction Prototype',
+        tags: ['hci'],
+        blurb: 'VRIF‑based interactions; floating candles dissolve on hand touch; Quest 3 testing.',
+        stack: ['Unity','VRIF','C#'],
+        link: '#',
+        img: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop'
+      },
+      {
+        title: 'AI Vehicle & MNIST Classifiers',
+        tags: ['ai'],
+        blurb: 'Data normalization, perceptron/logistic, confusion matrices, error curves, reporting.',
+        stack: ['Python','NumPy','scikit‑learn'],
+        link: '#',
+        img: 'https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop'
+      }
+    ];
+
+    const grid = document.getElementById('project-grid');
+
+    function renderCards(active='all'){
+      grid.innerHTML = '';
+      projects.filter(p => active==='all' ? true : p.tags.includes(active)).forEach(p => {
+        const card = document.createElement('a');
+        card.href = p.link;
+        card.target = '_blank';
+        card.rel = 'noopener';
+        card.className = 'card block rounded-3xl overflow-hidden bg-white hover:-translate-y-0.5 hover:shadow-xl transition';
+        card.innerHTML = `
+          <div class="h-44 bg-neutral-100 overflow-hidden"><img src="${p.img}" alt="${p.title}" class="w-full h-full object-cover"/></div>
+          <div class="p-5">
+            <h3 class="font-bold text-lg">${p.title}</h3>
+            <p class="mt-2 text-sm text-neutral-700">${p.blurb}</p>
+            <div class="mt-3 flex flex-wrap gap-2 text-xs text-neutral-600">
+              ${p.stack.map(s=>`<span class='px-2 py-1 rounded-full border'>${s}</span>`).join('')}
+            </div>
+          </div>`;
+        grid.appendChild(card);
+      });
+    }
+
+    renderCards();
+
+    document.querySelectorAll('[data-filter]').forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const val = btn.getAttribute('data-filter');
+        renderCards(val);
+      });
+    });
+  </script>
+</body>
+</html>
